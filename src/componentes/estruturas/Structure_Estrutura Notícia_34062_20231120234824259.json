@@ -1,0 +1,277 @@
+{
+  "availableLanguageIds": ["en_US"],
+  "contentType": "journal",
+  "dataDefinitionFields": [
+    {
+      "customProperties": {
+        "labelAtStructureLevel": true,
+        "hideField": false,
+        "confirmationErrorMessage": { "en_US": "" },
+        "autocomplete": false,
+        "ddmDataProviderInstanceId": [],
+        "dataType": "string",
+        "tooltip": { "en_US": "" },
+        "requireConfirmation": false,
+        "displayStyle": "singleline",
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "ddmDataProviderInstanceOutput": [],
+        "options": {},
+        "nativeField": false,
+        "confirmationLabel": { "en_US": "" },
+        "fieldReference": "titulo",
+        "placeholder": { "en_US": "Digite o título aqui" },
+        "dataSourceType": "",
+        "direction": ["vertical"]
+      },
+      "defaultValue": {},
+      "fieldType": "text",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": { "en_US": "Título" },
+      "localizable": true,
+      "name": "Text96254660",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": { "en_US": "" }
+    },
+    {
+      "customProperties": {
+        "labelAtStructureLevel": true,
+        "hideField": false,
+        "confirmationErrorMessage": { "en_US": "" },
+        "autocomplete": false,
+        "ddmDataProviderInstanceId": [],
+        "dataType": "string",
+        "tooltip": { "en_US": "" },
+        "requireConfirmation": false,
+        "displayStyle": "singleline",
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "ddmDataProviderInstanceOutput": [],
+        "options": {},
+        "nativeField": false,
+        "confirmationLabel": { "en_US": "" },
+        "fieldReference": "subtitulo",
+        "placeholder": { "en_US": "Digite o subtítulo aqui" },
+        "dataSourceType": "",
+        "direction": ["vertical"]
+      },
+      "defaultValue": {},
+      "fieldType": "text",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": { "en_US": "Subtítulo" },
+      "localizable": true,
+      "name": "Text65569987",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "tip": { "en_US": "" }
+    },
+    {
+      "customProperties": {
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "labelAtStructureLevel": true,
+        "inline": true,
+        "dataType": "string",
+        "options": {
+          "en_US": [
+            {
+              "reference": "astronomia",
+              "label": "Astronomia",
+              "value": "Option60648720"
+            },
+            {
+              "reference": "medicina",
+              "label": "Medicina",
+              "value": "Option46885740"
+            },
+            {
+              "reference": "biologia",
+              "label": "Biologia",
+              "value": "Option54706603"
+            }
+          ]
+        },
+        "nativeField": false,
+        "fieldReference": "categoria"
+      },
+      "defaultValue": {},
+      "fieldType": "radio",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": { "en_US": "Selecionar categoria da notícia" },
+      "localizable": true,
+      "name": "Radio45829511",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": { "en_US": "" }
+    },
+    {
+      "customProperties": {
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "labelAtStructureLevel": true,
+        "dataType": "date",
+        "nativeField": false,
+        "fieldReference": "data"
+      },
+      "defaultValue": {},
+      "fieldType": "date",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": { "en_US": "Data de publicação" },
+      "localizable": true,
+      "name": "Date18830146",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": { "en_US": "Data em que a notícia será publicada" }
+    },
+    {
+      "customProperties": {
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "dataType": "string",
+        "fieldReference": "conteudo"
+      },
+      "defaultValue": {},
+      "fieldType": "rich_text",
+      "indexType": "text",
+      "indexable": true,
+      "label": { "en_US": "Conteúdo" },
+      "localizable": true,
+      "name": "RichText27502177",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": { "en_US": "Escreva e adicione o conteúdo da notícia aqui" }
+    },
+    {
+      "customProperties": {
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "dataType": "image",
+        "requiredDescription": true,
+        "fieldReference": "imagem"
+      },
+      "defaultValue": {},
+      "fieldType": "image",
+      "indexType": "text",
+      "indexable": true,
+      "label": { "en_US": "Imagem de Capa" },
+      "localizable": true,
+      "name": "Image99796071",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": { "en_US": "Capa da notícia" }
+    },
+    {
+      "customProperties": {
+        "labelAtStructureLevel": true,
+        "hideField": false,
+        "confirmationErrorMessage": { "en_US": "" },
+        "autocomplete": false,
+        "ddmDataProviderInstanceId": [],
+        "dataType": "string",
+        "tooltip": { "en_US": "" },
+        "requireConfirmation": false,
+        "displayStyle": "singleline",
+        "fieldNamespace": "",
+        "visibilityExpression": "",
+        "ddmDataProviderInstanceOutput": [],
+        "options": {},
+        "nativeField": false,
+        "confirmationLabel": { "en_US": "" },
+        "fieldReference": "autor",
+        "placeholder": { "en_US": "" },
+        "dataSourceType": "",
+        "direction": ["vertical"]
+      },
+      "defaultValue": {},
+      "fieldType": "text",
+      "indexType": "keyword",
+      "indexable": true,
+      "label": { "en_US": "Autor" },
+      "localizable": true,
+      "name": "Text00700967",
+      "nestedDataDefinitionFields": [],
+      "readOnly": false,
+      "repeatable": false,
+      "required": true,
+      "showLabel": true,
+      "tip": { "en_US": "Pessoa que escreveu a notícia" }
+    }
+  ],
+  "defaultDataLayout": {
+    "dataLayoutFields": {},
+    "dataLayoutPages": [
+      {
+        "dataLayoutRows": [
+          {
+            "dataLayoutColumns": [
+              { "columnSize": 12, "fieldNames": ["Text96254660"] }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              { "columnSize": 12, "fieldNames": ["Text65569987"] }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              { "columnSize": 12, "fieldNames": ["Radio45829511"] }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              { "columnSize": 12, "fieldNames": ["Date18830146"] }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              { "columnSize": 12, "fieldNames": ["RichText27502177"] }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              { "columnSize": 12, "fieldNames": ["Image99796071"] }
+            ]
+          },
+          {
+            "dataLayoutColumns": [
+              { "columnSize": 12, "fieldNames": ["Text00700967"] }
+            ]
+          }
+        ],
+        "description": { "en_US": "" },
+        "title": { "en_US": "" }
+      }
+    ],
+    "dataRules": [],
+    "description": {},
+    "name": { "en_US": "Estrutura Notícia" },
+    "paginationMode": "single-page"
+  },
+  "defaultLanguageId": "en_US",
+  "description": {},
+  "name": { "en_US": "Estrutura Notícia" },
+  "storageType": "default"
+}

@@ -1,12 +1,12 @@
 <!------------------------Card padrão---------------------------->
-<div class="container bootstrap-grid-selector">
+<div class="container">
   <div class="row">
     <#if grupo.getSiblings()?has_content>
       <#list grupo.getSiblings() as cur_grupo>
         <div class="col-md-4">
           <div class="card bg-dark text-white">
             <#if (cur_grupo.imagem.getData())?? && cur_grupo.imagem.getData() !="">
-              <img alt="${cur_grupo.imagem.getAttribute("alt")}" data-fileentryid="${cur_grupo.imagem.getAttribute("fileEntryId")}" src="${cur_grupo.imagem.getData()}" class="img-fluid" />
+              <img alt="${cur_grupo.imagem.getAttribute("alt")}" data-fileentryid="${cur_grupo.imagem.getAttribute("fileEntryId")}" src="${cur_grupo.imagem.getData()}" />
             </#if>
             <div class="card-body">
               <#if (cur_grupo.texto.getData())??>
