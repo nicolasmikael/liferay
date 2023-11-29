@@ -2,7 +2,9 @@
 	"name": "my-test-theme",
 	"version": "1.0.0",
 	"main": "package.json",
-	"keywords": ["liferay-theme"],
+	"keywords": [
+		"liferay-theme"
+	],
 	"liferayTheme": {
 		"baseTheme": "styled",
 		"fontAwesome": false,
@@ -26,5 +28,8 @@
 		"status": "gulp status",
 		"upgrade": "gulp upgrade",
 		"watch": "gulp watch"
+	},
+	"dependencies": {
+		"slick-carousel": "^1.8.1"
 	}
 }

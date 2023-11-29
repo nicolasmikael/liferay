@@ -1,0 +1,30 @@
+.cnu-banner .card-image {
+  object-fit: cover;
+}
+
+.cnu-banner .card-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 767.98px) {
+  .cnu-banner .banner-title {
+    font-size: 32px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .cnu-banner .banner-title {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 280.98px) {
+  .cnu-banner .banner-title {
+    font-size: 18px !important;
+  }
+}
