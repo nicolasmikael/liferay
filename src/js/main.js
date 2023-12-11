@@ -30,4 +30,4 @@ Liferay.Portlet.ready(function (_portletId, _node) {});
  * This function gets loaded when everything, including the portlets, is on
  * the page.
  */
-Liferay.on('allPortletsReady', function () {});
+Liferay.on("allPortletsReady", function () {});

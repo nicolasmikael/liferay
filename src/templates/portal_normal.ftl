@@ -10,8 +10,6 @@
     <@liferay_util["include"]
         page=top_head_include />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body class="${css_class}">
@@ -34,14 +32,18 @@
                     </#if>
                 </div>
             </div>
-            <#if !is_signed_in>
-                <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
-                    ${sign_in_text}
-                </a>
-            </#if>
-            <#if has_navigation && is_setup_complete>
-                <#include "${full_templates_path}/navigation.ftl" />
-            </#if>
+            <div class="navbar">
+                <#if !is_signed_in>
+                    <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
+                        ${sign_in_text}
+                    </a>
+                </#if>
+                <div>
+                    <#if has_navigation && is_setup_complete>
+                        <#include "${full_templates_path}/navigation.ftl" />
+                    </#if>
+                </div>
+            </div>
         </header>
         <section id="content">
             <h2 class="hide-accessible sr-only" role="heading" aria-level="1">
@@ -72,42 +74,8 @@
         page=body_bottom_include />
     <@liferay_util["include"]
         page=bottom_include />
-    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script>
-    $(".responsive").slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                },
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    });
-    </script>
+    <script src="${javascript_folder}/slick.min.js"></script>
+    <script src="${javascript_folder}/slickresponsive.js"></script>
 </body>
 
 </html>

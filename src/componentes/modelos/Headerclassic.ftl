@@ -1,4 +1,3 @@
-<!-- Modelo Padrão/ Sem modificação -->
 <header id="banner">
     <div class="navbar navbar-classic navbar-top py-3">
         <div class="container-fluid container-fluid-max-xl user-personal-bar">
@@ -33,19 +32,9 @@
                             }
                             </style>
                             <div class="personal-menu-dropdown lfr-tooltip-scope" id="hvyn_personal_menu_dropdown">
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle rounded-circle btn btn-unstyled" type="button" aria-label="Test Test User Profile" aria-controls="clay-dropdown-menu-13" aria-expanded="false" aria-haspopup="true" title="User Profile Menu">
-                                        <span class="sticker sticker-user-icon sticker-lg">
-                                            <span class="sticker user-icon-color-2 sticker-circle sticker-lg">
-                                                <span class="sticker-overlay">
-                                                    <svg class="lexicon-icon lexicon-icon-user" role="presentation">
+                                <div class="dropdown"><button class="dropdown-toggle rounded-circle btn btn-unstyled" type="button" aria-label="Test Test User Profile" aria-controls="clay-dropdown-menu-13" aria-expanded="false" aria-haspopup="true" title="User Profile Menu"><span class="sticker sticker-user-icon sticker-lg"><span class="sticker user-icon-color-2 sticker-circle sticker-lg"><span class="sticker-overlay"><svg class="lexicon-icon lexicon-icon-user" role="presentation">
                                                         <use xlink:href="http://localhost:8080/o/classic-theme/images/clay/icons.svg#user"></use>
-                                                    </svg>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </button>
-                                </div>
+                                                    </svg></span></span></span></button></div>
                             </div>
                         </span>
                     </div>
@@ -125,33 +114,6 @@
                     </section>
                 </div>
             </div>
-        </div>
-    </div>
-</header>
-<!-- Modelo Padrão/ Sem modificação -->
-<header id="banner" role="banner" class="navbar">
-    <div id="heading">
-        <div aria-level="1" class="site-title" role="heading">
-            <a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
-            <img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-            </a>
-            <#if show_site_name>
-                <span class="site-name" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
-                ${site_name}
-                </span>
-            </#if>
-        </div>
-    </div>
-    <div class="navbar">
-        <#if !is_signed_in>
-            <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
-                ${sign_in_text}
-            </a>
-        </#if>
-        <div>
-            <#if has_navigation && is_setup_complete>
-                <#include "${full_templates_path}/navigation.ftl" />
-            </#if>
         </div>
     </div>
 </header>
