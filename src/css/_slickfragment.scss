@@ -1,8 +1,11 @@
-.max-width-container {
-  max-width: 500px;
-  margin: 0 auto;
+.card-img-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22rem;
+  width: 100%;
 }
 
-.bg-color-container {
-  background-color: #171278;
+.slick-card-carousel {
+  height: 33rem;
 }

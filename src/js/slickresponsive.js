@@ -1,4 +1,4 @@
-$(".responsive").slick({
+$(".carousel-home").slick({
   arrows: true,
   dots: true,
   infinite: true,
@@ -18,14 +18,14 @@ $(".responsive").slick({
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 991,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 560,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

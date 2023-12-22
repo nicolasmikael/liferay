@@ -18,6 +18,47 @@
  */
 AUI().ready(function () {});
 
+/* truncar texto card-padrão*/
+const observer2 = new MutationObserver(function (mutations) {
+  mutations.forEach(function (mutation) {
+    const richTextContainers =
+      mutation.target.querySelectorAll(".richTextContainer");
+    const maxLength = 100; // máximo de caracteres
+
+    richTextContainers.forEach((container) => {
+      const content = container.textContent.trim();
+      if (content.length > maxLength) {
+        const truncatedContent = content.substring(0, maxLength);
+        container.textContent = truncatedContent + "...";
+      }
+    });
+  });
+});
+
+observer2.observe(document.body, { subtree: true, childList: true });
+/* truncar texto */
+
+/* truncar texto card-slick */
+const observer3 = new MutationObserver(function (mutations) {
+  mutations.forEach(function (mutation) {
+    const richTextContainers = mutation.target.querySelectorAll(
+      ".richTextContainer2"
+    );
+    const maxLength = 70; // máximo de caracteres
+
+    richTextContainers.forEach((container) => {
+      const content = container.textContent.trim();
+      if (content.length > maxLength) {
+        const truncatedContent = content.substring(0, maxLength);
+        container.textContent = truncatedContent + "...";
+      }
+    });
+  });
+});
+
+observer3.observe(document.body, { subtree: true, childList: true });
+/* truncar texto card */
+
 /*
  * This function gets loaded after each and every portlet on the page.
  *

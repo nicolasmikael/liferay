@@ -18,30 +18,32 @@
     <@liferay_util["include"]
         page=body_top_include />
     <@liferay.control_menu />
-    <div class="container-fluid position-relative" id="wrapper">
-        <header id="banner" role="banner" class="navbar">
-            <div id="heading">
-                <div aria-level="1" class="site-title" role="heading">
-                    <a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
-                    <img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-                    </a>
-                    <#if show_site_name>
-                        <span class="site-name" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
-                        ${site_name}
-                        </span>
-                    </#if>
+    <div class="container-fluid position-relative px-0" id="wrapper">
+        <header class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <div class="heading">
+                    <div aria-level="1" class="site-title" role="heading">
+                        <a class="navbar-brand d-flex" href="${site_default_url}" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
+                        <img alt="${logo_description}" height="30" src="${site_logo}" width="30" />
+                        </a>
+                        <#if show_site_name>
+                            <span class="site-name" style="color: white;" title="<@liferay.language_format arguments=" ${site_name}" key="go-to-x" />">
+                            ${site_name}
+                            </span>
+                        </#if>
+                    </div>
                 </div>
-            </div>
-            <div class="navbar">
-                <#if !is_signed_in>
-                    <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
-                        ${sign_in_text}
-                    </a>
-                </#if>
-                <div>
+                <div class="d-flex align-items-center flex-wrap">
+                    <#if !is_signed_in>
+                        <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">
+                            ${sign_in_text}
+                        </a>
+                    </#if>
                     <#if has_navigation && is_setup_complete>
                         <#include "${full_templates_path}/navigation.ftl" />
                     </#if>
+                    <@liferay_portlet["runtime"]
+                        portletName="com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet" />
                 </div>
             </div>
         </header>

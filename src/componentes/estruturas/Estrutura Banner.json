@@ -1,0 +1,94 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "name": "PreenchimentoPelicula",
+          "label": "Preenchimento superior e inferior da Película",
+          "description": "Preenchimento superior e inferior da Película",
+          "type": "select",
+          "dataType": "int",
+          "defaultValue": "0",
+          "typeOptions": {
+            "validValues": [
+              {
+                "label": "0",
+                "value": "0"
+              },
+              {
+                "label": "1",
+                "value": "4"
+              },
+              {
+                "label": "2",
+                "value": "8"
+              },
+              {
+                "label": "3",
+                "value": "16"
+              },
+              {
+                "label": "4",
+                "value": "24"
+              },
+              {
+                "label": "5",
+                "value": "48"
+              },
+              {
+                "label": "6",
+                "value": "72"
+              },
+              {
+                "label": "7",
+                "value": "96"
+              },
+              {
+                "label": "8",
+                "value": "120"
+              },
+              {
+                "label": "9",
+                "value": "144"
+              },
+              {
+                "label": "10",
+                "value": "160"
+              }
+            ]
+          }
+        },
+        {
+          "name": "backgroundColor",
+          "label": "Cor da película do componente",
+          "type": "colorPalette",
+          "dataType": "object",
+          "defaultValue": {
+            "cssClass": "style-verde-e",
+            "rgbValue": "rgb(0, 78, 76)"
+          }
+        },
+        {
+          "name": "buttonColor",
+          "label": "Cor do botão",
+          "type": "colorPalette",
+          "dataType": "object",
+          "defaultValue": {
+            "cssClass": "style-laranja",
+            "rgbValue": "rgb(244, 121, 32)"
+          }
+        },
+        {
+          "name": "buttonTextColor",
+          "label": "Cor de texto do botão",
+          "type": "colorPalette",
+          "dataType": "object",
+          "defaultValue": {
+            "cssClass": "style-branco",
+            "rgbValue": "rgb(255,255,255)"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
       "fields": [
         {
           "name": "numberOfCards",
-          "label": "Número de Cards",
+          "label": "Number of Cards",
           "description": "number-of-cards",
           "type": "text",
           "typeOptions": {
@@ -17,21 +17,13 @@
           "name": "buttonColor",
           "label": "Cor do botão",
           "type": "colorPalette",
-          "dataType": "object",
-          "defaultValue": {
-            "cssClass": "cor-botao",
-            "rgbValue": "rgb(244, 121, 32)"
-          }
+          "dataType": "object"
         },
         {
           "name": "buttonTextColor",
           "label": "Cor de texto do botão",
           "type": "colorPalette",
-          "dataType": "object",
-          "defaultValue": {
-            "cssClass": "cor-texto",
-            "rgbValue": "rgb(244, 121, 32)"
-          }
+          "dataType": "object"
         }
       ]
     }

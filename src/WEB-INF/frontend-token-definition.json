@@ -1,0 +1,81 @@
+{
+  "frontendTokenCategories": [
+    {
+      "frontendTokenSets": [
+        {
+          "frontendTokens": [
+            {
+              "defaultValue": "#000000",
+              "editorType": "ColorPicker",
+              "label": "preto",
+              "mappings": [
+                {
+                  "type": "cssVariable",
+                  "value": "style-preto"
+                }
+              ],
+              "name": "Preto",
+              "type": "String"
+            },
+            {
+              "defaultValue": "#ffffff",
+              "editorType": "ColorPicker",
+              "label": "branco",
+              "mappings": [
+                {
+                  "type": "cssVariable",
+                  "value": "style-branco"
+                }
+              ],
+              "name": "Branco",
+              "type": "String"
+            },
+            {
+              "defaultValue": "#FF0000",
+              "editorType": "ColorPicker",
+              "label": "vermelho",
+              "mappings": [
+                {
+                  "type": "cssVariable",
+                  "value": "style-vermelho"
+                }
+              ],
+              "name": "Vermelho",
+              "type": "String"
+            },
+            {
+              "defaultValue": "#f47920",
+              "editorType": "ColorPicker",
+              "label": "laranja",
+              "mappings": [
+                {
+                  "type": "cssVariable",
+                  "value": "style-laranja"
+                }
+              ],
+              "name": "Laranja",
+              "type": "String"
+            },
+            {
+              "defaultValue": "#004e4c",
+              "editorType": "ColorPicker",
+              "label": "verde-escuro",
+              "mappings": [
+                {
+                  "type": "cssVariable",
+                  "value": "style-verde-e"
+                }
+              ],
+              "name": "VerdeEscuro",
+              "type": "String"
+            }
+          ],
+          "label": "theme-colors",
+          "name": "themeColors"
+        }
+      ],
+      "label": "color-system",
+      "name": "colorSystem"
+    }
+  ]
+}

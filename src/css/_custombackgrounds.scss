@@ -1,0 +1,10 @@
+@mixin background-colors($color-name, $color-value) {
+  .bg-#{$color-name} {
+    background-color: $color-value;
+  }
+}
+
+@include background-colors(style-azul-claro, #007bff);
+@include background-colors(style-cinza, #6c757d);
+@include background-colors(style-verde-e, #004e4c);
+@include background-colors(style-laranja, #f47920);

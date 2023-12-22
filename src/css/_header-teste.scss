@@ -1,0 +1,24 @@
+.navbar-nav {
+  a {
+    color: rgb(203, 202, 202);
+    font-size: 20px;
+    &:hover {
+      text-decoration: none;
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1px;
+      background: #ffffff;
+      transition: width 0.3s;
+    }
+  }
+  .active a {
+    color: rgb(255, 255, 255);
+  }
+}
